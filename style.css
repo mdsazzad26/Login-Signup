@@ -1,0 +1,44 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{font-family:Inter,Arial,sans-serif;color:#172033;background:#eef2f8}
+body{min-height:100vh;display:grid;place-items:center;padding:28px}
+.page{width:min(100%,1000px);min-height:650px;background:#fff;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 0.88fr;box-shadow:0 24px 70px rgba(21,34,58,.14)}
+.auth-card{padding:42px clamp(24px,5vw,62px);display:flex;flex-direction:column;justify-content:center;min-width:0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:2px;font-size:13px;margin-bottom:42px}
+.brand-icon{width:34px;height:34px;border-radius:11px;background:#6257e8;color:white;display:grid;place-items:center;font-size:18px;letter-spacing:0}
+.eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:#6257e8;margin-bottom:12px}
+.intro h1{font-size:clamp(25px,3vw,32px);letter-spacing:-1.2px;line-height:1.2;margin-bottom:9px}
+.intro>p:last-child{font-size:14px;color:#7b8496;line-height:1.6}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:#f1f2f8;padding:5px;border-radius:11px;margin:27px 0 23px;gap:4px}
+.tab{border:0;background:transparent;padding:11px 8px;border-radius:8px;font:600 13px Inter;cursor:pointer;color:#737c8f}
+.tab.active{background:white;color:#252b40;box-shadow:0 2px 8px #1c27400d}
+.field{margin-bottom:17px}
+.field label,.label-row label{display:block;font-size:12px;font-weight:700;margin-bottom:8px;color:#333c50}
+input[type=email],input[type=password],input[type=text]{width:100%;height:47px;border:1px solid #e0e4ed;border-radius:9px;padding:0 13px;font:14px Inter;color:#172033;outline:none;transition:.2s;background:#fff}
+input:focus{border-color:#756cf0;box-shadow:0 0 0 3px #756cf018}
+input::placeholder{color:#a8afbd}
+.label-row{display:flex;align-items:center;justify-content:space-between}
+.label-row a{font-size:11px;color:#6257e8;text-decoration:none;font-weight:600;margin-bottom:8px}
+.password-wrap{position:relative}
+.password-wrap input{padding-right:60px}
+.show-password{position:absolute;right:12px;top:50%;transform:translateY(-50%);border:0;background:none;color:#6257e8;font:600 11px Inter;cursor:pointer}
+.remember{display:flex;align-items:center;gap:8px;font-size:12px;color:#6f7889;margin:2px 0 20px;cursor:pointer}
+.remember input{accent-color:#6257e8}
+.submit-btn{width:100%;height:48px;border:0;border-radius:9px;background:#6257e8;color:white;font:700 14px Inter;cursor:pointer;box-shadow:0 8px 18px #6257e82b;transition:transform .2s,background .2s}
+.submit-btn:hover{background:#5146d2;transform:translateY(-1px)}
+.message{min-height:19px;text-align:center;font-size:12px;margin-top:11px;color:#21845a}
+.message.error{color:#d34a4a}
+.switch-copy{text-align:center;color:#81899a;font-size:12px;margin-top:15px}
+.switch-copy button{border:0;background:none;color:#6257e8;font:700 12px Inter;cursor:pointer}
+.demo-note{text-align:center;font-size:10px;color:#a4aaba;margin-top:30px}
+.visual-panel{position:relative;overflow:hidden;background:linear-gradient(145deg,#25205f 0%,#5146bb 55%,#7668ef 100%);color:white;padding:55px 42px;display:flex;flex-direction:column;justify-content:center}
+.visual-content{position:relative;z-index:1}
+.visual-tag{font-size:10px;letter-spacing:2px;font-weight:700;color:#d7d3ff}
+.visual-content h2{font-size:clamp(42px,5vw,62px);line-height:1.05;letter-spacing:-2.5px;margin:22px 0 18px}
+.visual-content p{max-width:270px;font-size:14px;line-height:1.8;color:#e0ddff}
+.panel-footer{position:absolute;bottom:27px;left:42px;font-size:9px;letter-spacing:1.5px;color:#d4d0ff}
+.visual-orb{position:absolute;border:1px solid #ffffff26;border-radius:50%;pointer-events:none}
+.orb-one{width:360px;height:360px;right:-190px;top:-150px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06}
+.orb-two{width:230px;height:230px;left:-155px;bottom:-135px;box-shadow:0 0 0 28px #ffffff08}
+[hidden]{display:none!important}
+@media(max-width:760px){body{padding:18px}.page{grid-template-columns:1fr;max-width:510px;min-height:0}.auth-card{padding:32px clamp(22px,7vw,42px)}.brand{margin-bottom:30px}.visual-panel{min-height:205px;padding:30px 32px}.visual-content h2{font-size:38px;margin:12px 0 8px}.visual-content p{font-size:12px;max-width:310px}.panel-footer{left:32px;bottom:17px}.orb-one{width:260px;height:260px;right:-145px;top:-135px}}
+@media(max-width:380px){body{padding:10px}.page{border-radius:17px}.auth-card{padding:25px 18px}.intro h1{font-size:25px}.tabs{margin:22px 0 19px}.visual-panel{min-height:190px;padding:25px 24px}.panel-footer{left:24px}}

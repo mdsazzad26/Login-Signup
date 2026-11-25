@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Login & Signup | Sazzadul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="auth-card">
+      <div class="brand"><span class="brand-icon">S</span><span>SAZZADUL ALAM </span></div>
+      <div class="intro">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h1 id="formTitle">Sign in to your account</h1>
+        <p id="formSubtitle">Enter your details to continue.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Account access">
+        <button class="tab active" id="loginTab" type="button" role="tab" aria-selected="true">Login</button>
+        <button class="tab" id="signupTab" type="button" role="tab" aria-selected="false">Create account</button>
+      </div>
+
+      <form id="authForm" novalidate>
+        <div class="field" id="nameField" hidden>
+          <label for="name">Full name</label>
+          <input id="name" type="text" placeholder="MD SAZZADUL ALAM" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="sazzadulalam.dev@gmail.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <div class="label-row"><label for="password">Password</label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <div class="password-wrap">
+            <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+            <button class="show-password" type="button" id="togglePassword" aria-label="Show password">Show</button>
+          </div>
+        </div>
+        <div class="field" id="confirmField" hidden>
+          <label for="confirmPassword">Confirm password</label>
+          <input id="confirmPassword" type="password" placeholder="Re-enter your password" autocomplete="new-password">
+        </div>
+        <label class="remember" id="rememberRow"><input type="checkbox" id="remember"> <span>Remember me</span></label>
+        <button class="submit-btn" type="submit" id="submitBtn">Sign in</button>
+        <p class="message" id="message" aria-live="polite"></p>
+      </form>
+      <p class="switch-copy" id="switchCopy">Don't have an account? <button type="button" id="switchBtn">Sign up</button></p>
+      <p class="demo-note">Frontend demo only · No real account is created</p>
+    </section>
+    <aside class="visual-panel">
+      <div class="visual-content">
+        <span class="visual-tag">YOUR SPACE. YOUR JOURNEY.</span>
+        <h2>Make every<br>day count.</h2>
+        <p>A simple, clean place to get started and keep moving forward.</p>
+        <div class="visual-orb orb-one"></div><div class="visual-orb orb-two"></div>
+      </div>
+      <span class="panel-footer">© 2026 SAZZADUL ALAM</span>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
